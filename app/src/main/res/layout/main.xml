@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:gravity="center_horizontal">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="8dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Z1="/>
+
+			<Spinner
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/z1ModeSpinner"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Real"
+					android:id="@+id/z1TitleA"/>
+
+				<EditText
+					android:inputType="numberDecimal|numberSigned"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/z1EditTextA"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Imaginary"
+					android:id="@+id/z1TitleB"/>
+
+				<EditText
+					android:inputType="numberDecimal|numberSigned"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/z1EditTextB"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Print"
+			android:id="@+id/z1PrintButton"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Z1="
+			android:id="@+id/z1PrintTextView"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="8dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Z2="/>
+
+			<Spinner
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/z2ModeSpinner"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Real"
+					android:id="@+id/z2TitleA"/>
+
+				<EditText
+					android:inputType="numberDecimal|numberSigned"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/z2EditTextA"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Imaginary"
+					android:id="@+id/z2TitleB"/>
+
+				<EditText
+					android:inputType="numberDecimal|numberSigned"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/z2EditTextB"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Print"
+			android:id="@+id/z2PrintButton"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Z2="
+			android:id="@+id/z2PrintTextView"/>
+
+	</LinearLayout>
+
+	<HorizontalScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="sum"
+				android:id="@+id/sumButton"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="divide"
+				android:id="@+id/divideButton"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="subtract"
+				android:id="@+id/subtractButton"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="multiply"
+				android:id="@+id/multiplyButton"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Parallel"
+				android:id="@+id/paralelButton"/>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Z1?Z2="
+		android:id="@+id/actionResTextView"/>
+
+</LinearLayout>
+
